@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación</title>
+</head>
+<body>
+    <header>
+        <h1> Formulario de validación</h1>
+        <nav aria-label="Menú principal"> 
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="lenguajes.html">Lenguajes</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2> Acceso</h2>
+            <form action = "#" method = "post">
+                <div>
+                    <label for ="correo"> Ingrese su correo electrónico: </label>
+                    <input type = "emain" id = "correo" name = "correo" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div>
+                    <label for = "contraseña"> Ingrese su contraseña: </label>
+                    <input type = "password" id = "contraseña" name = "contraseña" placeholder="Entre 6 y 8 dígitos" patter="{6,8}" required>
+                </div>
+                <div>
+                    <label for = "confirmar"> Ingrese su contraseña: </label>
+                    <input type = "password" id = "confirmar" name = "confirmar" placeholder="Reescriba su contraseña" required>
+                </div>
+                <!-- Ahora creamos el botón para enviar los datos-->
+                 <div>
+                    <button type = "submit"> Validar datos</button>
+                 </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
