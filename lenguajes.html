@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguajes</title>
+</head>
+<body>
+    <header>
+        <h1> Lenguajes de Programación</h1>
+        <nav  label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="lenguajes.html">Lenguajes</a></li>
+        <li><a href="validacion.html">Validación</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2> Formulario de preferencias </h2>
+            <!-- Para la foto de perfil utilizamos <figur>-->
+            <figure>
+                <img src = "imagenes/fotoPerfil.jpeg" alt = "Foto de perfil" width = "100">
+                <figcaption> Foto de perfil del usuario </figcaption>
+            </figure>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend> ¿Qué lenguajes conoces?</legend>
+                    <div>
+                    <input type = "checkbox" id = "html" name = "lenguajes" value = "HTML">
+                    <label for= "html" > HTML</label>
+                    </div>
+                    <div>
+                    <input type = "checkbox" id = "css" name = "lenguajes" value = "CSS">
+                    <label for= "css" > CSS</label>
+                    </div>
+                    <div>
+                    <input type = "checkbox" id = "javascript" name = "lenguajes" value = "JavaScript">
+                    <label for= "javascript" > JavaScript</label>
+                    </div>
+                    <div>
+                    <input type = "checkbox" id = "python" name = "lenguajes" value = "Python">
+                    <label for= "python" > Python</label>
+                    </div>  
+                </fieldset>
+                <!-- Horas de estudio de programación, con opciones-->
+                <div>
+                    <label for = " En un día, ¿cuantas horas le dedicas a la programación?"></label>
+                    <input type = "number" id = "horasn" name = "horas" min = °0° max = "24" required>
+                </div>
+                <!-- Creamos el botón para guardar-->
+                <div>
+                    <button type = "submit"> Guardar el formulario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
